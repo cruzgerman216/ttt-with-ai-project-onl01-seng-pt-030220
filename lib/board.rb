@@ -1,6 +1,7 @@
 class Board
   attr_accessor :cells
 
+<<<<<<< HEAD
   def initialize
     @cells = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
@@ -48,5 +49,9 @@ class Board
   def update(num, player)
     num = num.to_i - 1
     @cells[num] = player.token
+=======
+  def reset!
+    @cells = []
+>>>>>>> cc0f5e1db02232d581b3487e4eaa289bab0e46ef
   end
 end
